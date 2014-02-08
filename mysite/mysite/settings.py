@@ -24,7 +24,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['.popgentech.com', '.popgentech.com.']
+ALLOWED_HOSTS = ['.myappdev.net', '.myappdev.net.']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admindocs',
     'crispy_forms',
-    'mysite',
+    'marcado',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -86,10 +86,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 STATICFILES_DIR = (
-	os.path.join(BASE_DIR, 'static'),
+	os.path.join(BASE_DIR, 'static', '/'),
 )
 TEMPLATE_DIRS = (
-	os.path.join(BASE_DIR, 'templates'),
+	os.path.join(BASE_DIR, 'templates', '/'),
 )
 
 STATIC_URL = '/static/'
