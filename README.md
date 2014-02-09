@@ -25,20 +25,27 @@ You'll also need to change the production servername etc to suit your own host a
 
 
 1. The project assumes you are working in /data/projects
+
 ````
 cd /data/projects
 git clone git@github.com:ian1roberts/marcador_demo.git
 ````
+
 2. Create virtualenv in your marcador_demo directory 
+
 ````
 cd /data/projects/marcador_demo
 virtualenv venv
 ```` 
+
 3. Install the python packages
+
 ````
 pip install -r conf/requriements.txt
 ````
+
 4. Set up virtual host for apache. Copy conf/apache/004-marcador.conf to /etc/apache2/sites-available
+
 ````
 sudo a2ensite 004-marcador.conf
 sudo service apache2 reload
