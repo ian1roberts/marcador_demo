@@ -50,10 +50,8 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'mysite.urls'
-
 WSGI_APPLICATION = 'mysite.wsgi.application'
-
+ROOT_URLCONF = 'mysite.urls'
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
@@ -86,12 +84,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 STATICFILES_DIR = (
-	os.path.join(BASE_DIR, 'static', '/'),
+	os.path.join(BASE_DIR, 'static'),
 )
 TEMPLATE_DIRS = (
-	os.path.join(BASE_DIR, 'templates', '/'),
+	os.path.join(BASE_DIR, 'templates'),
 )
 
+
+STATIC_ROOT = '/data/projects/marcador_demo/mysite/static/'
 STATIC_URL = '/static/'
 LOGIN_URL = 'mysite_login'
 LOGOUT_URL = 'mysite_logout'
